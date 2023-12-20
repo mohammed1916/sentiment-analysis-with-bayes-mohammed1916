@@ -1,0 +1,96 @@
+/opt/homebrew/bin/python3 /Users/mohammedabdullah/Documents/Development/React/Projects/clg/AI/sentiment-analysis-with-bayes-m
+ohammed1916/bayes_2023176026/codes/code_main.py
+[nltk_data] Downloading package twitter_samples to
+[nltk_data]     /Users/mohammedabdullah/nltk_data...
+[nltk_data]   Unzipping corpora/twitter_samples.zip.
+[nltk_data] Downloading package stopwords to
+[nltk_data]     /Users/mohammedabdullah/nltk_data...
+[nltk_data]   Unzipping corpora/stopwords.zip.
+
+
+/opt/homebrew/bin/python3 /Users/mohammedabdullah/Documents/Development/React/Projects/clg/AI/sentiment-analysis-with-bayes-m
+ohammed1916/bayes_2023176026/codes/code_main.py
+[nltk_data] Downloading package twitter_samples to
+[nltk_data]     /Users/mohammedabdullah/nltk_data...
+[nltk_data]   Package twitter_samples is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     /Users/mohammedabdullah/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+--------------------
+Training:
+Total Number of Documents: 8000
+Number of positive documents: 4000.0
+Number of negative documents: 4000.0
+logprior:  0.0
+Total values in loglikelihood:  9085
+--------------------
+Predictions:
+I am happy because leaning NLP -> 2.15 
+Positive sentiment
+I am sad not leaning NLP -> -2.82 
+Negative sentiment
+--------------------
+Naive Bayes accuracy = 0.9940
+--------------------
+
+Negative words at or below a threshold:
++------------------------+----------+----------+-----------------------+
+|          Word          | Positive | Negative |         Ratio         |
++------------------------+----------+----------+-----------------------+
+|           :(           |    1     |   3663   | 0.0005458515283842794 |
+|          :-(           |    0     |   378    |  0.002638522427440633 |
+| zayniscomingbackonjuli |    0     |    19    |          0.05         |
+|           26           |    0     |    20    |  0.047619047619047616 |
+|          >:(           |    0     |    43    |  0.022727272727272728 |
+|          lost          |    0     |    19    |          0.05         |
+|           ♛            |    0     |   210    |  0.004739336492890996 |
+|           》           |    0     |   210    |  0.004739336492890996 |
+|         beli̇ev         |    0     |    35    |  0.027777777777777776 |
+|          wi̇ll          |    0     |    35    |  0.027777777777777776 |
+|         justi̇n         |    0     |    35    |  0.027777777777777776 |
+|         ｓｅｅ         |    0     |    35    |  0.027777777777777776 |
+|          ｍｅ          |    0     |    35    |  0.027777777777777776 |
++------------------------+----------+----------+-----------------------+
+
+Positive words at or above a threshold:
++-----------------------+----------+----------+-------------------+
+|          Word         | Positive | Negative |       Ratio       |
++-----------------------+----------+----------+-------------------+
+|      followfriday     |    23    |    0     |        24.0       |
+|         commun        |    27    |    1     |        14.0       |
+|           :)          |   2847   |    2     | 949.3333333333334 |
+| flipkartfashionfriday |    16    |    0     |        17.0       |
+|           :d          |   498    |    0     |       499.0       |
+|           :p          |   104    |    0     |       105.0       |
+|        influenc       |    16    |    0     |        17.0       |
+|          :-)          |   543    |    0     |       544.0       |
+|         here'         |    20    |    0     |        21.0       |
+|         youth         |    14    |    0     |        15.0       |
+|          bam          |    44    |    0     |        45.0       |
+|         warsaw        |    44    |    0     |        45.0       |
+|         shout         |    11    |    0     |        12.0       |
+|           ;)          |    22    |    0     |        23.0       |
+|          stat         |    51    |    0     |        52.0       |
+|         arriv         |    57    |    4     |        11.6       |
+|          via          |    60    |    1     |        30.5       |
+|          glad         |    41    |    2     |        14.0       |
+|          blog         |    27    |    0     |        28.0       |
+|          fav          |    11    |    0     |        12.0       |
+|         fback         |    26    |    0     |        27.0       |
+|        pleasur        |    10    |    0     |        11.0       |
++-----------------------+----------+----------+-------------------+
+--------------------
+Check misclassified tweets:
+1       0.00    b''
+1       0.00    b'truli later move know queen bee upward bound movingonup'
+1       0.00    b'new report talk burn calori cold work harder warm feel better weather :p'
+1       0.00    b'harri niall 94 harri born ik stupid wanna chang :d'
+1       0.00    b''
+1       0.00    b''
+1       0.00    b'park get sunlight'
+1       0.00    b'uff itna miss karhi thi ap :p'
+0       1.00    b'hello info possibl interest jonatha close join beti :( great'
+0       1.00    b'u prob fun david'
+0       1.00    b'pat jay'
+0       1.00    b'whatev stil l young >:-('
+Number of misclassified tweets:  12
